@@ -13,8 +13,8 @@
 			</div>
 			<nav id='nav'>
 				<ul id="navli">
-					<li><a href="/users/bdawg/php/index.php" title="Home">Home</a></li>
-					<li><a href="/users/bdawg/php/assignments.php" title="Assignments">Assignments</a></li>
+					<li><a href="/index.php" title="Home">Home</a></li>
+					<li><a href="/assignments.php" title="Assignments">Assignments</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -27,8 +27,8 @@
 		In my spare time I enjoy family outings, playing League of Legends and reading.  
 		I consider myself hard working and dedicated to any task that needs completed.  
 		This website is where all of the assignments for CS 313 will be found.</p>
-		<img src="/users/bdawg/php/brendon-young.jpg" alt="Picture of Brendon Young">
-		<img src="/users/bdawg/php/my-family.jpg" alt="My family and I in Oregon">
+		<img src="/brendon-young.jpg" alt="Picture of Brendon Young">
+		<img src="/my-family.jpg" alt="My family and I in Oregon">
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
