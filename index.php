@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Brendon Young - CS 313</title>
-		<link href="/users/bdawg/php/style.css" type="text/css" rel="stylesheet" media="screen" >
+		<link href="/php/style.css" type="text/css" rel="stylesheet" media="screen" >
 	</head>
 	<body>
 		<div id="header">
