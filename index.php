@@ -28,7 +28,7 @@
 		I consider myself hard working and dedicated to any task that needs completed.  
 		This website is where all of the assignments for CS 313 will be found.</p>
 		<img src="/brendon-young.jpg" alt="Picture of Brendon Young">
-		<img src="/my-family.jpg" alt="My family and I in Oregon">
+		<img src="/my-family.JPG" alt="My family and I in Oregon">
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
