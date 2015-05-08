@@ -18,7 +18,8 @@
 				</ul>
 			</nav>
 		</div>
-		<p>Under construction...</p>
+		<h1>Assignments</h1>
+		<a href="/team-readiness-activity.php" title="Team Readiness Activity">Team Readiness Activity</a>
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
