@@ -17,7 +17,7 @@
 			</nav>
 		</div>
 		
-		<form action ="team-readiness-activity-results.php" method ="post">
+		<form action ="form-results.php" method ="post">
 			Name: <input type="text" name="name"><br><br>
 			Email: <input type="text" name="email"><br><br>
 			Major: <br>

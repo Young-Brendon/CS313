@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -19,7 +19,11 @@
 			</nav>
 		</div>
 		<h1>Assignments</h1>
-		<a href="/team-readiness-activity.php" title="Team Readiness Activity">Team Readiness Activity</a>
+		<h2>Lesson 2</h2>
+		<ul>
+			<li><a href="/lesson2/form.php" title="Form">PHP Form</a></li>
+			<li><a href="/lesson2/php-survey.php" title="PHP Survey">PHP Survey</a></li>
+		</ul>
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
