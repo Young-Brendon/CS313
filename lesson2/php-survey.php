@@ -1,8 +1,3 @@
-<?php
-	
-	session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -24,7 +19,7 @@
 			</nav>
 		</div>
 		<h1>PHP Survey</h1>
-		<form action="php-survey-results.php" method="session">
+		<form action="php-survey-results.php" method="post">
 			What is your favorite color?<br>
 			<input type="radio" name="color" value="color_blue">Blue
 			<input type="radio" name="color" value="color_red">Red

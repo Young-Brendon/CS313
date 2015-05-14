@@ -96,20 +96,20 @@
 	
 	$color = $food = $league = $married = "";
 	
-	if (isset($_SESSION['color'])){
-		$color = $_SESSION['color'] . "\r\n";
+	if (isset($_POST['color'])){
+		$color = $_POST['color'] . "\r\n";
 	}
 	
-	if (isset($_SESSION['food'])){
-		$food = $_SESSION['food'] . "\r\n";
+	if (isset($_POST['food'])){
+		$food = $_POST['food'] . "\r\n";
 	}
 	
-	if (isset($_SESSION['league'])){
-		$league = $_SESSION['league'] . "\r\n";
+	if (isset($_POST['league'])){
+		$league = $_POST['league'] . "\r\n";
 	}
 	
-	if (isset($_SESSION['married'])){
-		$married = $_SESSION['married'] . "\r\n";
+	if (isset($_POST['married'])){
+		$married = $_POST['married'] . "\r\n";
 	}
 	
 	$myfile = fopen("survey-results.txt", "a+") or die("Unable to open file");
