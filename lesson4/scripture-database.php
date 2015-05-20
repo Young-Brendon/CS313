@@ -1,3 +1,9 @@
+<?php 
+	require("/dbconnection.php");
+	$db = loadDatabase();
+	$items = getScriptureItems();	
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,13 +24,13 @@
 				</ul>
 			</nav>
 		</div>
-		<h1>Assignments</h1>
-		<h2>Lesson 2</h2>
-		<ul>
-			<li><a href="/lesson2/form.php" title="Form">PHP Form</a></li>
-			<li><a href="/lesson2/php-survey.php" title="PHP Survey">PHP Survey</a></li>
-			<li><a href="/lesson4/scripture-database.php" title="Scripture Database">Scripture Database</a></li>
-		</ul>
+		<h1>Scripture Resources</h1>
+		<?php foreach($items as $item) : ?>
+		<?php echo $item['book']; ?>
+		<?php echo $item['chapter']; ?>:
+		<?php echo $item['verse']; ?>-
+		<?php echo $item['content']; ?><br><br>
+		<?php endforeach;?>		
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
