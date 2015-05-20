@@ -5,13 +5,12 @@
 	function loadDatabase() {		
 
 		
-        $dbHost = 127.11.68.2; 
-		$dbport = 3306;
+        $dbHost = "127.11.68.2";
         $dbUser = "admind39KZ2E";
         $dbPassword = "m9aFsKDNDrUF";
-		$dbName = "php";		 
+		$dbName = "mydb";		 
      
-		$db = new PDO("mysql:host=$dbHost;port=$dbport;dbname=$dbName", $dbUser, $dbPassword);
+		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 
 		return $db;
 
