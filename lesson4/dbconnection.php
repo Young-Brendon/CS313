@@ -15,8 +15,8 @@
 			
 		} else { 
           // In the openshift environment
-          $dbHost = "127.11.68.2"; 
-		  $dbport = "3306";
+          $dbHost = 127.11.68.2; 
+		  $dbport = 3306;
           $dbUser = "admind39KZ2E";
           $dbPassword = "m9aFsKDNDrUF";
 		  $dbName = "mydb";
