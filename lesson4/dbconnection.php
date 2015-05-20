@@ -15,7 +15,8 @@
 			
 		} else { 
           // In the openshift environment
-          $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');          
+          $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
+		  $dbport = getenv('OPENSHIFT_MYSQL_DB_PORT');
           $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
           $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 		  $dbName = "mydb";
