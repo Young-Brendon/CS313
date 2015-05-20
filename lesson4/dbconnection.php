@@ -11,13 +11,14 @@
 			$dbHost = "localhost";
 			$dbUser = "root";
 			$dbPassword = "";
-			$dbName = "mydb";			
+			$dbName = "mydb";	
 			
 		} else { 
           // In the openshift environment
           $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');          
           $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
           $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+		  $dbName = "mydb";
 		} 
      
 		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
