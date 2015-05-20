@@ -22,7 +22,7 @@
 		  $dbName = "mydb";
 		} 
      
-		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+		$db = new PDO("mysql:host=$dbHost:$dbport;dbname=$dbName", $dbUser, $dbPassword);
 
 		return $db;
 
