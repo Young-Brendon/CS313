@@ -19,7 +19,7 @@
 		  $dbport = 3306;
           $dbUser = "admind39KZ2E";
           $dbPassword = "m9aFsKDNDrUF";
-		  $dbName = "mydb";
+		  $dbName = "php";
 		} 
      
 		$db = new PDO("mysql:host=$dbHost;port=$dbport;dbname=$dbName", $dbUser, $dbPassword);
