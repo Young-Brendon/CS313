@@ -2,11 +2,9 @@
 	
 	global $db;
 	
-	function loadDatabase() {
+	function loadDatabase() {		
 
-		$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
-
-		if ($openShiftVar === null || $openShiftVar == "") {
+		if ($$_SERVER['SERVER_NAME'] == 'localhost') {
 			// Not in the openshift environment
 			$dbHost = "localhost";
 			$dbUser = "root";
