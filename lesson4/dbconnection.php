@@ -4,16 +4,13 @@
 	
 	function loadDatabase() {		
 
-		
-        $dbHost = "127.11.68.2";
-        $dbUser = "admind39KZ2E";
-        $dbPassword = "m9aFsKDNDrUF";
-		$dbName = "mydb";		 
+		$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
+		$dbport = getenv('OPENSHIFT_MYSQL_DB_PORT');
+		$dbName = "mydb";	 
      
-		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+		$db = new PDO("mysql:host=$dbHost;$dbport;dbname=$dbName", "admind39KZ3E", "m9aFsKDNDrUF");
 
 		return $db;
-
 	}
 	
 	function getScriptureItems() {      
