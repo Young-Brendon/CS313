@@ -19,8 +19,9 @@
 		return DbSelect($query);
     }
 
-	function DbSelect($query, $params = null) {        
-
+	function DbSelect($query, $params = null) {
+	
+		global $db;
         $return = array();        
 
         try {
