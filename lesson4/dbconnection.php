@@ -4,8 +4,8 @@
 	
 	function loadDatabase() {		
 
-		$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST'); 
-		$dbport = getenv('OPENSHIFT_MYSQL_DB_PORT');
+		$dbHost = "127.11.68.2"; 
+		$dbport = "3306";
 		$dbName = "mydb";	 
      
 		$db = new PDO("mysql:host=$dbHost;$dbport;dbname=$dbName", "admind39KZ3E", "m9aFsKDNDrUF");
