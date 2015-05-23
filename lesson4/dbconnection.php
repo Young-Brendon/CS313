@@ -21,7 +21,6 @@
 
 	function DbSelect($query, $params = null) {        
 
-        global $db;
         $return = array();        
 
         try {
