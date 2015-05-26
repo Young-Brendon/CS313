@@ -1,13 +1,30 @@
 <?php
 	
-	function loadDatabase() {		
+	global $db;
+	
+	function loadDatabase() {
 
-		$dbHost = 127.11.68.2;
-		$dbName = "mydb";	 
+		$openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
+
+		if ($openShiftVar === null || $openShiftVar == "") {
+			// Not in the openshift environment
+			$dbHost = "localhost";
+			$dbUser = "root";
+			$dbPassword = "";
+			$dbName = "mydb";	
+			
+		} else { 
+          // In the openshift environment
+          $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
+          $dbUser = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
+          $dbPassword = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
+		  $dbName = "mydb";
+		} 
      
-		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "admind39KZ3E", "m9aFsKDNDrUF");
+		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
 
 		return $db;
+
 	}
 	
 	function getScriptureItems() {      
