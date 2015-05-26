@@ -57,9 +57,7 @@
 			echo '<p>';
 			while($item = $statement->fetch(PDO::FETCH_ASSOC)) {
 				echo $item['book'];
-				echo $item['chapter'];:
-				echo $item['verse'];-
-				echo $item['content'];'<br>''<br>' }
+			}
 			echo '</p>';
 		?>		
 		<footer id="footer">
