@@ -1,7 +1,5 @@
 <?php
 	
-	global $db;
-	
 	function loadDatabase() {		
 
 		$dbHost = 127.11.68.2;
