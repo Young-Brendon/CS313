@@ -1,7 +1,8 @@
 <?php
 	
+	global $db;
+	
 	function loadDatabase() {
-
 		
 		$dbName = "mydb";		
         $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
@@ -25,8 +26,7 @@
 
 	function DbSelect($query, $params = null) {
 	
-		$db = "";
-        $return = array();        
+		$return = array();        
 
         try {
 
@@ -48,7 +48,7 @@
         }
         return $return;
     }
-	$db = loadDatabase();
+	
 	$items = getScriptureItems();
 ?>
 	
