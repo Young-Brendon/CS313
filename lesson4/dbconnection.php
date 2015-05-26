@@ -4,11 +4,10 @@
 	
 	function loadDatabase() {		
 
-		$dbHost = 127.11.68.2; 
-		$dbport = 3306;
+		$dbHost = 127.11.68.2;
 		$dbName = "mydb";	 
      
-		$db = new PDO("mysql:host=$dbHost;$dbport;dbname=$dbName", "admind39KZ3E", "m9aFsKDNDrUF");
+		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "admind39KZ3E", "m9aFsKDNDrUF");
 
 		return $db;
 	}
