@@ -11,8 +11,8 @@
 		$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 	
 		$statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
+		$statement->execute();
 		
-		echo $statement;
 	
 	
 ?>
@@ -41,7 +41,7 @@
 			</nav>
 		</div>
 		<h1>Scripture Resources</h1>
-		<?php foreach($items as $item) : ?>
+		<?php foreach($item = $statement->fetch(PDO::FETCH_ASSOC)) : ?>
 		<?php echo $item['book']; ?>
 		<?php echo $item['chapter']; ?>:
 		<?php echo $item['verse']; ?>-
