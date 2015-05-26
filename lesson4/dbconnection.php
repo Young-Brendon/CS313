@@ -1,9 +1,8 @@
 <?php
 	
-	global $db;
-	
 	function loadDatabase() {
 
+		$db = "";
 		$dbHost = "";
 		$dbPort = "";
 		$dbUser = "";
@@ -43,7 +42,7 @@
 
 	function DbSelect($query, $params = null) {
 	
-		global $db;
+		$db = "";
         $return = array();        
 
         try {
