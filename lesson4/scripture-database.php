@@ -1,7 +1,5 @@
 <?php
 	
-	global $db;
-	
 	function loadDatabase() {
 		
 		$dbName = "mydb";		
