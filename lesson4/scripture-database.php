@@ -40,12 +40,28 @@
 			</nav>
 		</div>
 		<h1>Scripture Resources</h1>
-		<?php foreach($item = $statement->fetch(PDO::FETCH_ASSOC)) : ?>
-		<?php echo $item['book']; ?>
-		<?php echo $item['chapter']; ?>:
-		<?php echo $item['verse']; ?>-
-		<?php echo $item['content']; ?><br><br>
-		<?php endforeach;?>		
+		<?php	
+			$dbName = "mydb";		
+			$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
+			$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
+			$dbUser = 'test';
+			$dbPassword = 'test';
+		  		  
+			echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br />\n";		 
+     
+			$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+	
+			$statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
+			$statement->execute();		
+		
+			echo '<p>';
+			while($item = $statement->fetch(PDO::FETCH_ASSOC)) {
+				echo $item['book'];
+				echo $item['chapter'];:
+				echo $item['verse'];-
+				echo $item['content'];'<br>''<br>' }
+			echo '</p>';
+		?>		
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
