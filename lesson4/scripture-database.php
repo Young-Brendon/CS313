@@ -1,5 +1,5 @@
 <?php 
-	require("/dbconnection.php");
+	require("dbconnection.php");
 	$db = loadDatabase();
 	$items = getScriptureItems();	
 ?>
