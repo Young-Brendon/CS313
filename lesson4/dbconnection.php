@@ -67,5 +67,8 @@
         return $return;
     }
 	
-	
 ?>
+
+<!DOCTYPE html>
+
+</html>
