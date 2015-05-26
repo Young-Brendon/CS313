@@ -1,7 +1,7 @@
 <?php 
 	require '/dbconnection.php';
-	//$db = loadDatabase();
-	//$items = getScriptureItems();
+	$db = loadDatabase();
+	$items = getScriptureItems();
 ?>
 
 <!DOCTYPE html>
