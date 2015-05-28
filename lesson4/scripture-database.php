@@ -1,3 +1,10 @@
+<?php 
+	require '/dbconnection.php';
+	$db = loadDatabase();
+	
+	$items = getScriptureItems();	
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -19,24 +26,12 @@
 			</nav>
 		</div>
 		<h1>Scripture Resources</h1>
-		<?php	
-			$dbName = "mydb";		
-			$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
-			$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
-		  		  
-			echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br />\n";		 
-     
-			$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", 'test', 'test');
-	
-			$statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
-			$statement->execute();		
-		
-			echo '<p>';
-			while($item = $statement->fetch(PDO::FETCH_ASSOC)) {
-				echo $item['book'];
-			}
-			echo '</p>';
-		?>		
+		<?php foreach($items as $item) : ?>
+		<?php echo $item['book']; ?>
+		<?php echo $item['chapter']; ?>:
+		<?php echo $item['verse']; ?>-
+		<?php echo $item['content']; ?><br><br>
+		<?php endforeach;?>		
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>
