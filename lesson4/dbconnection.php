@@ -7,7 +7,7 @@
 		
         $dbName = "mydb";				 
      
-		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "test", "test");
+		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "admind39KZ2E", "*DCE3CCA271D1422BEA4A87C3CDC5695507D3BA60");
 
 		return $db;
 
