@@ -12,7 +12,7 @@ $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 $dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 try
 {
-	$db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", "test", "test");
+	$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "test", "test");
 	$statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
 	$statement->execute();
     echo '<p>';
