@@ -1,6 +1,6 @@
 <?php 
 	require '/dbconnection.php';
-	$mydb = loadDatabase();
+	$db = loadDatabase();
         
 	$items = getScriptureItems();	
 ?>
