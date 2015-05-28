@@ -5,7 +5,7 @@
         $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 		$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 		
-        $dbName = "php";				 
+        $dbName = "mydb";				 
      
 		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "test", "test");
 
