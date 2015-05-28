@@ -5,7 +5,7 @@
         $dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 		$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
 		
-        $dbName = "mydb";				 
+        $dbName = "php";				 
      
 		$db = new PDO("mysql:host=$dbHost;dbname=$dbName", "test", "test");
 
@@ -21,7 +21,7 @@
 
 	function DbSelect($query, $params = null) {
 	
-		$db = "";
+		global $db;
         $return = array();        
 
         try {
@@ -46,7 +46,3 @@
     }
 	
 ?>
-
-<!DOCTYPE html>
-
-</html>
