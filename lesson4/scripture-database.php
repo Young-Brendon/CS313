@@ -1,7 +1,7 @@
 <?php
 	error_reporting(E_ALL);
     ini_set("display_errors", 1);
-	require("/dbconnection.php");
+	include 'dbconnection.php';
 	$db = loadDatabase();
 	$items = getScriptureItems();	
 ?>
