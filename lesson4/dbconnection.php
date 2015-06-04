@@ -1,7 +1,7 @@
 <?php
 	
 	global $db;
-	function loadDatabase() {	
+	function loadDatabase() {
 		
 		$dbHost = getenv('OPENSHIFT_MYSQL_DB_HOST');
 		$dbPort = getenv('OPENSHIFT_MYSQL_DB_PORT');
