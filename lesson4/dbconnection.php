@@ -25,7 +25,7 @@
 	function getGalleryImages() {
 	
 		$query = "SELECT * FROM pictures ORDER BY pictures_id";
-		return DbSelect($query):
+		return DbSelect($query);
 	}
 
 	function DbSelect($query, $params = null) {
