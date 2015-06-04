@@ -1,3 +1,11 @@
+<?php
+	error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+	include 'dbconnection.php';
+	$db = loadDatabase();
+	$items = getGalleryImages();	
+?>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -21,7 +29,11 @@
 		<h2>Gallery</h2>
 		<p>Feel free to post a picture of nature that you enjoy and/or comment on any picture.  Please only upload family appropriate
 		images and make pg rated comments.  Any violations will be removed.</p>
-		
+		<?php foreach($items as $item) : ?>
+		<?php echo $item['title']; ?>
+		<?php echo $item['image']; ?>
+		<?php echo $item['caption']; ?><br><br>
+		<?php endforeach;?>	
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>
 		</footer>

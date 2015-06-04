@@ -21,6 +21,12 @@
 		$query = "SELECT book, chapter, verse, content FROM scriptures ORDER BY id";
 		return DbSelect($query);
     }
+	
+	function getGalleryImages() {
+	
+		$query = "SELECT * FROM pictures ORDER BY pictures_id";
+		return DbSelect($query):
+	}
 
 	function DbSelect($query, $params = null) {
 	
