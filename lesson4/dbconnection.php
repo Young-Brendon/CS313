@@ -24,7 +24,7 @@
 	
 	function getGalleryImages() {
 	
-		$query = "SELECT title, image, caption FROM pictures INNER JOIN comments ON pictures.pictures_id = comments.pictures_id ORDER BY pictures_id";
+		$query = "SELECT * FROM pictures INNER JOIN comments ON pictures.pictures_id = comments.pictures_id";
 		return DbSelect($query);
 	}
 
