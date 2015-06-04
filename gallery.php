@@ -32,9 +32,9 @@
 		<?php foreach($items as $item) : ?>
 		<h2><?php echo $item['title']; ?></h2><br>
 		<img src="<?php echo $item['image']; ?>" alt="<?php echo $item['title']; ?>" /><br>
-		<?php echo $item['caption']; ?><br><br>
-		<?php echo $item['comments']; ?><br><br>
-		<?php echo $item['date']; ?><br><br>
+		Caption: <?php echo $item['caption']; ?><br><br>
+		<div id="comments">Comments: <?php echo $item['comments']; ?><br><br>
+		<?php echo $item['date']; ?></div><br><br>
 		<?php endforeach;?>	
 		<footer id="footer">
 			<p>&copy; - Brendon Young 2015</p>

@@ -10,6 +10,13 @@ img {
     width: 25em;
 }
 
+#comments{
+	
+	width: 25em;
+	border-style: double;
+	padding: 1em;
+}
+
 #header {
     
     text-align: center;
