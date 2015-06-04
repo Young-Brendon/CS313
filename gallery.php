@@ -30,8 +30,8 @@
 		<p>Feel free to post a picture of nature that you enjoy and/or comment on any picture.  Please only upload family appropriate
 		images and make pg rated comments.  Any violations will be removed.</p>
 		<?php foreach($items as $item) : ?>
-		<?php echo $item['title']; ?>
-		<?php echo $item['image']; ?>
+		<h2><?php echo $item['title']; ?></h2><br>
+		<img src="<?php echo $item['image']; ?>" alt="<?php echo $item['title']; ?>" /><br>
 		<?php echo $item['caption']; ?><br><br>
 		<?php endforeach;?>	
 		<footer id="footer">
