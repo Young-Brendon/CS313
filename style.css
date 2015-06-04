@@ -5,6 +5,12 @@ body {
     background-color: #9BC4E2;
 }
 
+img {
+    
+    width: 13em;
+    height: 10em;
+}
+
 #header {
     
     text-align: center;
