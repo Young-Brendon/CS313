@@ -26,7 +26,7 @@
 		switch($image_type) {
 		
 			case IMAGETYPE_JPEG:
-				$image_from_file = 'imagecreatefromjpeg':;
+				$image_from_file = 'imagecreatefromjpeg';
 				$image_to_file = 'imagejpeg';
 				break;
 				
