@@ -15,6 +15,7 @@
 				<ul id="navli">
 					<li><a href="/index.php" title="Home">Home</a></li>
 					<li><a href="/assignments.php" title="Assignments">Assignments</a></li>
+					<li><a href="/gallery.php" title="Gallery">Gallery</a></li>
 				</ul>
 			</nav>
 		</div>
