@@ -64,7 +64,7 @@
 	
 		$date = date_create()->format('Y-m-d');
 		$query = "INSERT INTO comments(comments, date)";
-		$query .= "VALUES :comments, :date");
+		$query .= "VALUES :comments, :date)";
 		$commentsid = DbInsert($query, array(':comments' => $comments, ':date' =>$date));		
 	}
 	
