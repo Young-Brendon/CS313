@@ -4,7 +4,7 @@
 	include 'lesson4/dbconnection.php';
 	$db = loadDatabase();
 	$comment = $_POST['comment'];
-	insertComments($comments);
+	insertComments($comment);
 	
 ?>
 
