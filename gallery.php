@@ -29,7 +29,7 @@
 		<h2>Gallery</h2>
 		<p>Feel free to post a picture of nature that you enjoy and/or comment on any picture.  Please only upload family appropriate
 		images and make pg rated comments.  Any violations will be removed.  Use the button to upload a picture.
-		<button action='upload.php'>Upload</button></p>
+		<button type="button" onclick='upload.php'>Upload a picture</button></p>
 		
 		<?php foreach($items as $item) : ?>
 		<div id="galleryLayout">
