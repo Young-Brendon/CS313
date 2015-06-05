@@ -28,8 +28,9 @@
 		</div>
 		<h2>Gallery</h2>
 		<p>Feel free to post a picture of nature that you enjoy and/or comment on any picture.  Please only upload family appropriate
-		images and make pg rated comments.  Any violations will be removed.  Use the link below to upload a picture.</p>
-		<a href="/upload.php" title="Upload">Upload a Picture</a>
+		images and make pg rated comments.  Any violations will be removed.  Use the button to upload a picture.
+		<button action='upload.php'>Upload</button></p>
+		
 		<?php foreach($items as $item) : ?>
 		<div id="galleryLayout">
 			<h2><?php echo $item['title']; ?></h2><br>
