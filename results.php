@@ -14,7 +14,7 @@
 		
 		$image_path_400 = $dir . $image_name . $ext;
 		
-		resize_image($image_path, $image_path_400, 400, 300);		
+		resize_image($image_path, $image_path_200, 200, 150);		
 	}
 	
 	function resize_image($old_image_path, $new_image_path, $max_width, $max_height) {
