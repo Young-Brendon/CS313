@@ -83,9 +83,6 @@
 		}
 		
 		imagedestroy($old_image);		
-	}
-	
-	require 'gallery.php';
-	
+	}	
 	
 ?>
