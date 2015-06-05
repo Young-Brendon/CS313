@@ -58,7 +58,7 @@
 				<div id="comments">
 					Comments: <?php echo $item['comments']; ?><br><br>
 					<?php echo $item['date']; ?>
-					<form action ="addComment.php" method ="post">
+					<form action ="addcomment.php" method ="post">
 						Add a comment:
 						<textarea name="comment" rows="5" cols="40"></textarea><br><br>
 						<input type="submit">
