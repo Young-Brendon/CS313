@@ -5,7 +5,7 @@
 	Title: <input type="text" name="title"><br><br>
 	Image to be uploaded: 
 	<input type="hidden" name="action" value="upload">
-	<input type="file" name="file1"><br><br>
+	<input type="file" name="filename"><br><br>
 	Caption: <input type="text" name="caption">
 	<input type="submit">
 </form>

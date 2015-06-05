@@ -3,7 +3,26 @@
     ini_set("display_errors", 1);
 	include 'lesson4/dbconnection.php';
 	$db = loadDatabase();
-	$items = getGalleryImages();	
+	$items = getGalleryImages();
+	
+	$title = $_POST['title'];
+	$filename = $_POST['filename'];
+	$caption = $_POST['caption'];
+	
+	$image_dir = 'images';
+	$image_dir_path = getcwd() . DIRECTORY_SEPARATOR . $image_dir;
+	
+	if (isset($_FILES['filename'])) {
+		$filename = $_FILES['filename']['name'];
+		if (emplty($filename)) {
+			break;
+		}
+		$source = $_FILES['filename']['tmp_name'];
+		$target = $image_dir_path . DIRECTORY_SEPARATOR . $filename;
+		move_uploaded_file($source, $target);
+		
+		process_image($image_dir_path, $filename);
+	}
 ?>
 
 <!doctype html>
