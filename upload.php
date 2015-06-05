@@ -7,5 +7,5 @@
 	<input type="hidden" name="action" value="upload">
 	<input type="file" name="filename"><br><br>
 	Caption: <input type="text" name="caption">
-	<input type="submit">
+	<input type="upload">
 </form>
