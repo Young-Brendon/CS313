@@ -1,7 +1,7 @@
 <?php
 	error_reporting(E_ALL);
     ini_set("display_errors", 1);
-	require("/lesson4/dbconnection.php");
+	include 'lesson4/dbconnection.php';
 	$db = loadDatabase();
 	$comment = $_POST['comment'];
 	insertComments($comments);
